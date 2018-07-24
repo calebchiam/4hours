@@ -1,15 +1,13 @@
-># Single line comments start with a number symbol.
+>\# Single line comments start with a number symbol.
 
 >""" Multiline strings can be written
-    using three "s, and are often used
-    as documentation.
-"""
+>    using three "s, and are often used
+>    as documentation.
+>"""
 
->####################################################
->## 1. Primitive Datatypes and Operators
->####################################################
+>\#\# 1. Primitive Datatypes and Operators
 
-># You have numbers
+>\# You have numbers
 
 ```Python
 3  # => 3
