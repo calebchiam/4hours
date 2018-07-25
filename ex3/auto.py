@@ -14,7 +14,7 @@ while True:
     pyautogui.typewrite(['tab'])
     pyautogui.typewrite('Within the walls')
     pyautogui.typewrite(['tab'])
-    pyautogui.typewrite('91514198')
+    pyautogui.typewrite('94143889')
     pyautogui.typewrite(['tab'])
     pyautogui.typewrite('SASAGAEYO')
     pyautogui.typewrite(['tab', 'enter'])
