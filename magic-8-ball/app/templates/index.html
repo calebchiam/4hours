@@ -1,0 +1,47 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+</head>
+<div class="toy">
+  <form class="ball">
+    <div class="window"></div>
+    <div class="eight">
+      <span>8</span>
+    </div>
+
+    <div class="answers">
+      <!-- Affirmatives -->
+      {% for response in options["yes"] %}
+        <input id="affirmative{{loop.index}}" type="radio" name="answer" required>
+        <div class="answer down">{{response}}</div>
+      {% endfor %}
+
+      {% for response in options["maybe"] %}
+        <input id="non-commital{{loop.index}}" type="radio" name="answer" required>
+        <div class="answer down">{{response}}</div>
+      {% endfor %}
+
+      {% for response in options["no"] %}
+        <input id="negative{{loop.index}}" type="radio" name="answer" required>
+        <div class="answer down">{{response}}</div>
+      {% endfor %}
+    </div>
+
+    <div class="labels">
+      {% for response in options["yes"] %}
+        <label for="affirmative{{loop.index}}"></label>
+      {% endfor %}
+
+      {% for response in options["maybe"] %}
+        <label for="non-committal{{loop.index}}"></label>
+      {% endfor %}
+
+      {% for response in options["no"] %}
+        <label for="negative{{loop.index}}"></label>
+      {% endfor %}
+    </div>
+  </form>
+  <div class="instruction">1. Press and<br>hold the ball</div>
+  <div class="instruction">2. Ask the<br>ball a question</div>
+  <div class="instruction">3. Release the<br>ball</div>
+  <div class="instruction">4. Read answer,<br> repeat</div>
+</div>
